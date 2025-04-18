@@ -6,12 +6,12 @@ import ProductManagement from './components/ProductManagement';
 import ProductList from './components/ProductList';
 import ProcessManager from './components/ProcessManager';
 import ProcessDashboard from './components/ProcessDashboard';
-import UserTable from './components/UserTable';
+
 import Login from './components/Login';
 import Signup from './components/Signup';
 import ForgotPassword from './components/ForgotPassword';
 import CategoryManagement from './components/CategoryManagement';
-
+import UserManagement from './components/UserManagement';
 // Animation variants
 const pageVariants = {
   initial: {
@@ -88,7 +88,7 @@ function App() {
                 <Route path="/product-list" element={<MotionWrapper><ProductList /></MotionWrapper>} />
                 <Route path="/process-management" element={<MotionWrapper><ProcessManager /></MotionWrapper>} />
                 <Route path="/dashboard" element={<MotionWrapper><ProcessDashboard /></MotionWrapper>} />
-                <Route path="/users" element={<MotionWrapper><UserTable /></MotionWrapper>} />
+                <Route path="/users" element={<MotionWrapper><UserManagement /></MotionWrapper>} />
                 <Route path="/add-category" element={<MotionWrapper><CategoryManagement /></MotionWrapper>} />
                 <Route path="*" element={<MotionWrapper><ProductManagement /></MotionWrapper>} />
               </>

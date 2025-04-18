@@ -64,11 +64,10 @@ const ProductList = () => {
 
   const generateQR = (product) => {
     const data = {
-      name: product.productDetails.productName,
-      price: product.productDetails.price,
-      id: product._id,
-      category: product.category,
-      date: product.productDetails.date
+      productNamee: product.productDetails.productName,
+      productId: product._id,
+      productPrice: product.productDetails.price
+  
     };
     setQrData({
       text: JSON.stringify(data),
